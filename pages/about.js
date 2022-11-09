@@ -1,5 +1,5 @@
 import { Row, Col, Container } from "react-bootstrap";
-export default function Home(props) {
+export default function About(props) {
   return (
     <>
     <br></br>
@@ -9,7 +9,7 @@ export default function Home(props) {
       <Container fluid="md">
         <Row>
           <Col className="text-center">
-          <h1>Hello, World!</h1>
+          <h1>About us</h1>
           </Col>
         </Row>
       </Container>
