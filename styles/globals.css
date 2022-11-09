@@ -2,15 +2,14 @@
 
 html,
 body {
-  --custom-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --custom-font-family: "ibm-plex-sans", sans-serif;
   --custom-bg-color: #dcdf97;
   --custom-panel-color: #222;
   --custom-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.8);
   --custom-color: #fff;
   --custom-color-brand: #24b47e;
   --custom-color-brand-secondary: #3a2e69;
-  --custom-color-secondary: #666;
+  --custom-color-secondary: #EDF1F5;;
   --custom-border: 1px solid #333;
   --custom-border-radius: 5px;
   --custom-spacing: 5px;
@@ -51,6 +50,8 @@ hr {
 
 
 header nav {
+  z-index: 10000 !important;
+
   box-sizing: border-box;
   border-bottom: 5px solid var(--custom-color-brand);
   /* margin-bottom: 2em; */
@@ -60,6 +61,22 @@ header nav {
 
 }
 
+a {
+  text-decoration: none !important;
+  
+}
+
+button a{
+  color: var(--custom-color) ;
+
+}
+button {
+  background-color: var(--custom-color-brand);
+  border: none;
+  color: var(--custom-color) ;
+  padding: 1.5em;
+  border-radius: var(--custom-border-radius) !important;
+}
 
 footer {
   position: relative;
@@ -78,6 +95,10 @@ footer {
 
 }
 
+section{
+  margin: 0 auto;
+  background-color: var(--custom-color);
+}
 
 .active,
 .active:last-child {
@@ -96,5 +117,14 @@ footer {
 .image-gallery-content .image-gallery-slide .image-gallery-image {
   max-height: none;
 }
-
+.detached-heading{
+  position: relative !important;
+  top: -120px !important;
+  padding: .5em;   
+  margin: 0 auto;
+  width: fit-content;
+  background-color: var(--custom-color-secondary);
+  text-transform: uppercase;  
+  color: var(--custom-panel-color)
+}
 @media (max-width: 600px) {}

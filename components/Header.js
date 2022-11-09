@@ -11,14 +11,13 @@ export default function Header() {
   let location = router.pathname;
 
   return (
-    <header className="">
+    <header>
       <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
         <Container fluid style={{ width: "50vw" }}>
           <Navbar.Brand href="/">
             <Image alt="logo" src={logo} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <br></br>
           <Navbar.Collapse id="responsive-navbar-nav ">
             <Nav
               className=" justify-content-between "
