@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 html,
 body {
   --custom-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
@@ -17,7 +19,7 @@ body {
   padding: 0 !important;
   margin: 0 !important;
   font-family: var(--custom-font-family) !important;
-  background-color:white !important;
+  background-color: white !important;
 }
 
 a {
@@ -29,31 +31,35 @@ a {
   box-sizing: border-box;
 }
 
+main {
+  min-height: 99vh;
+}
 
 
 nav {
   box-sizing: border-box;
   border-bottom: 5px solid var(--custom-color-brand);
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
 
   position: fixed;
   top: 0;
 
 }
 
+
 footer {
   position: relative;
-
+  margin-top: 3em;
   max-height: 10vh;
   min-height: 10vh;
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  color: white;
+  color: var(--custom-color-secondary);
   text-align: center;
   border-top: var(--custom-border);
-  background-color: var(--custom-panel-color);
+  background-color: var(--custom-color);
 
 
 }
@@ -66,6 +72,15 @@ footer {
   opacity: .8;
   background-color: var(--custom-color);
 
+}
+
+.image-gallery-image {
+  width: 100vw !important;
+}
+
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: none;
 }
 
 @media (max-width: 600px) {}
