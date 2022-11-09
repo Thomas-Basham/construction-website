@@ -6,7 +6,7 @@ export default function Home(props) {
   const images = [orangeCouch, patio];
 
   const imageGalleryData = images.map((image) => {
-    return { original: image.src };
+    return { original: image.src, thumbnail: image.src };
   });
   return (
     <>

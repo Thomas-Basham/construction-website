@@ -36,7 +36,7 @@ main {
 }
 
 
-nav {
+header nav {
   box-sizing: border-box;
   border-bottom: 5px solid var(--custom-color-brand);
   /* margin-bottom: 2em; */
