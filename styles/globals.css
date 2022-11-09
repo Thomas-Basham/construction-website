@@ -9,7 +9,8 @@ body {
   --custom-color: #fff;
   --custom-color-brand: #24b47e;
   --custom-color-brand-secondary: #3a2e69;
-  --custom-color-secondary: #EDF1F5;;
+  --custom-color-secondary: #EDF1F5;
+  ;
   --custom-border: 1px solid #333;
   --custom-border-radius: 5px;
   --custom-spacing: 5px;
@@ -63,17 +64,18 @@ header nav {
 
 a {
   text-decoration: none !important;
-  
-}
-
-button a{
-  color: var(--custom-color) ;
 
 }
+
+button a {
+  color: var(--custom-color);
+
+}
+
 button {
   background-color: var(--custom-color-brand);
   border: none;
-  color: var(--custom-color) ;
+  color: var(--custom-color);
   padding: 1.5em;
   border-radius: var(--custom-border-radius) !important;
 }
@@ -95,7 +97,7 @@ footer {
 
 }
 
-section{
+section {
   margin: 0 auto;
   background-color: var(--custom-color);
 }
@@ -117,14 +119,36 @@ section{
 .image-gallery-content .image-gallery-slide .image-gallery-image {
   max-height: none;
 }
-.detached-heading{
+
+.bg-image-section {
+  background-image: url("../public/stock/stairs-people.jpg") !important;
+  background-position-y: 60%;
+  background-size: cover;
+  height: 46em;
+  width: 77vw;
+}
+
+.detached-heading {
   position: relative !important;
   top: -120px !important;
-  padding: .5em;   
+  padding: .5em;
   margin: 0 auto;
   width: fit-content;
   background-color: var(--custom-color-secondary);
-  text-transform: uppercase;  
+  text-transform: uppercase;
   color: var(--custom-panel-color)
 }
+
+.flip-card {
+  padding: 20px;
+  padding-block: 5em;
+  margin-inline: 30px;
+  justify-self: center;
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--custom-color-brand);
+}
+
+;
+
 @media (max-width: 600px) {}

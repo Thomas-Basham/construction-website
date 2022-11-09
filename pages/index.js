@@ -1,10 +1,17 @@
 import { Row, Col, Container } from "react-bootstrap";
 import Image from "next/image";
 import orangeCouch from "/public/stock/orange-couch.jpg";
+import stairsPeople from "/public/stock/stairs-people.jpg";
 import patio from "/public/stock/patio.jpg";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
-export default function Home(props) {
+import ReactCardFlip from "react-card-flip";
+import { useState } from "react";
+
+export default function Home() {
+  const [isFlipped1, setIsFlipped1] = useState(false);
+  const [isFlipped2, setIsFlipped2] = useState(false);
+
   return (
     <>
       <Image
@@ -22,7 +29,9 @@ export default function Home(props) {
           top: -650,
         }}
       >
-        <div className="detached-heading text-center display-6">commodo massa. dolore aliqua.</div>
+        <div className="detached-heading text-center display-6">
+          commodo massa. dolore aliqua.
+        </div>
         <Container>
           <Row>
             <Col>
@@ -62,7 +71,72 @@ export default function Home(props) {
         </Container>
       </section>
 
-      <section className=""></section>
+      <section
+        className="bg-image-section"
+        style={{
+          position: "relative",
+          top: -650,
+        }}
+      >
+        <br></br>
+        <br></br>
+        <br></br>
+        <Container fluid className="text-center text-white text-uppercase">
+          <h1 className="display-3">Lorem ipsum dolor</h1>
+          <br></br>
+          <br></br>
+
+          <Row className="px-4">
+            <Col xs>
+              <ReactCardFlip isFlipped={isFlipped1} flipDirection="horizontal">
+                <div
+                  onMouseEnter={() => setIsFlipped1((prev) => !prev)}
+                  className="CardFront flip-card"
+                >
+                  <div>
+                    <h4>pellentesque habitant morbi</h4>
+                  </div>
+                </div>
+                <div
+                  onMouseLeave={() => setIsFlipped1((prev) => !prev)}
+                  className="CardBack flip-card"
+                >
+                  <p>
+                    Imperdiet massa tincidunt nunc pulvinar sapien et.
+                    Consectetur adipiscing elit pellentesque habitant morbi
+                    tristique senectus et netus.
+                  </p>
+                </div>
+              </ReactCardFlip>
+            </Col>
+            <Col lg></Col>
+
+            <Col xs>
+              <ReactCardFlip isFlipped={isFlipped2} flipDirection="horizontal">
+                <div
+                  onMouseEnter={() => setIsFlipped2((prev) => !prev)}
+                  className="CardFront flip-card"
+                  
+                >
+                  <div>
+                    <h4>adipiscing elit pellentesque</h4>
+                  </div>
+                </div>
+                <div
+                  onMouseLeave={() => setIsFlipped2((prev) => !prev)}
+                  className="CardBack flip-card"
+                >
+                  <p>
+                    Imperdiet massa tincidunt nunc pulvinar sapien et.
+                    Consectetur adipiscing elit pellentesque habitant morbi
+                    tristique senectus et netus.
+                  </p>{" "}
+                </div>
+              </ReactCardFlip>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </>
   );
 }
