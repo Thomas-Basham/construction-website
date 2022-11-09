@@ -35,6 +35,20 @@ main {
   min-height: 99vh;
 }
 
+hr {
+  border: none;
+  border-top: 3px double #333 !important;
+  width: 80%;
+  margin: 2em auto 2em !important;
+}
+
+/* hr:after {
+  background: #fff;
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+} */
+
 
 header nav {
   box-sizing: border-box;
