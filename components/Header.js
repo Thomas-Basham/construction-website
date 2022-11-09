@@ -1,12 +1,11 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { CgProfile } from "react-icons/cg";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 export default function Header() {
   const router = useRouter();
-
-  let location = router.pathname
-  console.log(location)
+  let location = router.pathname;
+  
   return (
     <header className="">
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -18,10 +17,9 @@ export default function Header() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <br></br>
           <Navbar.Collapse id="responsive-navbar-nav ">
-
             <Nav
               className=" justify-content-between "
-              style={{ width: "30vw",}}
+              style={{ width: "30vw" }}
               activeKey={location}
             >
               <Nav.Link href="/">Home</Nav.Link>

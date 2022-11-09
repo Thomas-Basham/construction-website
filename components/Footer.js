@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 
 export default function Footer() {
   return (
-    <footer >
+    <footer>
       <Container>
         <br></br>
         ©Thomas Basham
