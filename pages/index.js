@@ -23,285 +23,28 @@ export default function Home() {
       <Image
         alt="house with orange couch"
         objectFit="cover"
-        layout='fill'
+        layout="fill"
         src={orangeCouch}
       />
-    <div>
-      <section
-        style={{
-
-          marginTop: "40em",
-          padding: "5em",
-          width: "fit-content",
-          position: "relative",
-      
-        }}
-      >
-        <div className="detached-heading text-center display-6">
-          commodo massa. dolore aliqua.
-        </div>
-        <Container>
-          <Row>
-            <Col>
-              <h1 className="display-3">Lorem ipsum dolor</h1>
-              <strong>Eiusmod tempor incididunt ut labore</strong>
-              <br></br>
-              <br></br>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Et
-                magnis dis parturient montes nascetur ridiculus mus mauris
-                vitae. Nec sagittis
-              </p>
-              <br></br>
-              <p>
-                Imperdiet massa tincidunt nunc pulvinar sapien et. Consectetur
-                adipiscing elit pellentesque habitant morbi tristique senectus
-                et netus. Amet mauris commodo quis imperdiet massa. Congue
-                mauris rhoncus aenean vel elit scelerisque. Enim nulla aliquet
-                porttitor lacus. Adipiscing
-              </p>
-              <button className="button">
-                <Link href={"/projects"}>
-                  PROJECTS &nbsp; <BsArrowUpRight />
-                </Link>
-              </button>
-            </Col>
-            <Col>
-              <Image
-                alt="house with orange couch"
-                objectFit="contain"
-                layout="responsive"
-                src={patio}
-              />
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      <section
-        className="bg-image-section"
-        style={{
-          position: "relative",
-          
-        }}
-      >
-        <br></br>
-        <br></br>
-        <Container fluid className="text-center text-white ">
-          <h1 className="display-5 text-uppercase">
-            Lorem ipsum dolor imperdiet massa
-          </h1>
-          <p style={{ width: "50em", margin: "0 auto" }}>
-            Amet mauris commodo quis imperdiet massa. Congue mauris rhoncus
-            aenean vel elit scelerisque. Enim nulla aliquet porttitor lacus.
-            Adipiscing
-          </p>
-          <br></br>
-          <br></br>
-
-          <Row className="px-4">
-            <Col xs>
-              <ReactCardFlip isFlipped={isFlipped1} flipDirection="horizontal">
-                <div
-                  onMouseEnter={() => setIsFlipped1((prev) => !prev)}
-                  className="CardFront flip-card"
-                >
-                  <div>
-                    <h4>pellentesque habitant morbi</h4>
-                    <hr></hr>
-                  </div>
-                </div>
-                <div
-                  onMouseLeave={() => setIsFlipped1((prev) => !prev)}
-                  className="CardBack flip-card"
-                >
-                  <p>
-                    Imperdiet massa tincidunt nunc pulvinar sapien et.
-                    Consectetur adipiscing elit pellentesque habitant morbi
-                    tristique senectus et netus.
-                  </p>
-                </div>
-              </ReactCardFlip>
-            </Col>
-            <Col lg></Col>
-
-            <Col xs>
-              <ReactCardFlip isFlipped={isFlipped2} flipDirection="horizontal">
-                <div
-                  onMouseEnter={() => setIsFlipped2((prev) => !prev)}
-                  className="CardFront flip-card"
-                >
-                  <div>
-                    <h4>adipiscing elit pellentesque</h4>
-                    <hr></hr>
-                  </div>
-                </div>
-                <div
-                  onMouseLeave={() => setIsFlipped2((prev) => !prev)}
-                  className="CardBack flip-card"
-                >
-                  <p>
-                    Imperdiet massa tincidunt nunc pulvinar sapien et.
-                    Consectetur adipiscing elit pellentesque habitant morbi
-                    tristique senectus et netus.
-                  </p>
-                </div>
-              </ReactCardFlip>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <section
-        style={{
-          position: "relative",
-          
-        }}
-        className="process-section"
-      >
-        <Container fluid style={{ width: "95vw" }}>
-          <div className="display-5 text-center text-uppercase ">
-            Our Process
+      <div>
+        <section
+          style={{
+            marginTop: "40em",
+            padding: "5em",
+            width: "fit-content",
+            position: "relative",
+          }}
+        >
+          <div className="detached-heading text-center display-6">
+            commodo massa. dolore aliqua.
           </div>
-          <hr style={{ width: 80 }}></hr>
-          <Row>
-            <br></br>
-            <br></br>
-            <Col className="process-steps">
-              <MdContactPhone size={80} />
-              <br></br>
-              <br></br>
-              <h6>
-                <strong>Step 1</strong>
-              </h6>
-              <br></br>
-              <p>
-                Habitant morbi tristique et netus. <br></br>
-                Amet mauris commodo quis imperdiet massa.
-              </p>
-            </Col>
-            <Col className="process-steps">
-              <BiPaperPlane size={80} />
-              <br></br>
-              <br></br>
-              <h6>
-                <strong>Step 2</strong>
-              </h6>
-              <br></br>
-              <p>
-                Habitant morbi tristique et netus. <br></br>
-                Amet mauris commodo quis imperdiet massa.
-              </p>
-            </Col>
-            <Col className="process-steps">
-              <FaFileInvoice size={80} />
-              <br></br>
-              <br></br>
-              <h6>
-                <strong>Step 3</strong>
-              </h6>
-              <br></br>
-              <p>
-                Habitant morbi tristique et netus. <br></br>
-                Amet mauris commodo quis imperdiet massa.
-              </p>
-            </Col>
-            <Col className="process-steps">
-              <FaTools size={80} />
-              <br></br>
-              <br></br>
-              <h6>
-                <strong>Step 4</strong>
-              </h6>
-              <br></br>
-              <p>
-                Habitant morbi tristique et netus. <br></br>
-                Amet mauris commodo quis imperdiet massa.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      <section
-        style={{
-          position: "relative",
-          
-        }}
-        className="quality-section"
-      >
-        <Container fluid style={{ width: "95vw" }}>
-          <Row>
-            <br></br>
-            <br></br>
-            <Col className="quality-steps">
-              <BiFingerprint size={80} />
-              <br></br>
-              <br></br>
-              <br></br>
-              <p>
-                Habitant morbi tristique et netus. <br></br>
-                Amet mauris commodo quis imperdiet massa.
-              </p>
-            </Col>
-            <Col className="quality-steps">
-              <BiHeartCircle size={80} />
-              <br></br>
-              <br></br>
-              <br></br>
-              <p>
-                Habitant morbi tristique et netus. <br></br>
-                Amet mauris commodo quis imperdiet massa.
-              </p>
-            </Col>
-            <Col className="quality-steps">
-              <GiCheckMark size={80} />
-              <br></br>
-              <br></br>
-              <br></br>
-              <p>
-                Habitant morbi tristique et netus. <br></br>
-                Amet mauris commodo quis imperdiet massa.
-              </p>
-            </Col>
-            <Col className="quality-steps">
-              <GiLaurelsTrophy size={80} />
-              <br></br>
-              <br></br>
-              <br></br>
-              <p>
-                Habitant morbi tristique et netus. <br></br>
-                Amet mauris commodo quis imperdiet massa.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <section
-        className="partial-about-section"
-        style={{
-          position: "relative",
-          
-        }}
-      >
-        <Container fluid style={{ width: "70vw" }}>
-          <Row>
-            <Col>
-              <Image
-                alt="house with orange couch"
-                objectFit="contain"
-                layout="responsive"
-                src={team}
-              />
-            </Col>
-            <Col>
-              <div style={{ width: "60%" }} className="display-6">
-                Dis parturient montes nascetur ridiculus
-              </div>
-              <br></br>
-              <hr></hr>
-              <br></br>
-              <div style={{ width: "60%" }}>
+          <Container>
+            <Row>
+              <Col>
+                <h1 className="display-3">Lorem ipsum dolor</h1>
+                <strong>Eiusmod tempor incididunt ut labore</strong>
+                <br></br>
+                <br></br>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -316,16 +59,273 @@ export default function Home() {
                   mauris rhoncus aenean vel elit scelerisque. Enim nulla aliquet
                   porttitor lacus. Adipiscing
                 </p>
-              </div>
-              <button className="button">
-                <Link href={"/about"}>
-                  ABOUT US &nbsp; <BsArrowUpRight />
-                </Link>
-              </button>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+                <button className="button">
+                  <Link href={"/projects"}>
+                    PROJECTS &nbsp; <BsArrowUpRight />
+                  </Link>
+                </button>
+              </Col>
+              <Col>
+                <Image
+                  alt="house with orange couch"
+                  objectFit="contain"
+                  layout="responsive"
+                  src={patio}
+                />
+              </Col>
+            </Row>
+          </Container>
+        </section>
+
+        <section
+          className="bg-image-section"
+          style={{
+            position: "relative",
+          }}
+        >
+          <br></br>
+          <br></br>
+          <Container fluid className="text-center text-white ">
+            <h1 className="display-5 text-uppercase">
+              Lorem ipsum dolor imperdiet massa
+            </h1>
+            <p style={{ width: "50em", margin: "0 auto" }}>
+              Amet mauris commodo quis imperdiet massa. Congue mauris rhoncus
+              aenean vel elit scelerisque. Enim nulla aliquet porttitor lacus.
+              Adipiscing
+            </p>
+            <br></br>
+            <br></br>
+
+            <Row className="px-4">
+              <Col xs>
+                <ReactCardFlip
+                  isFlipped={isFlipped1}
+                  flipDirection="horizontal"
+                >
+                  <div
+                    onMouseEnter={() => setIsFlipped1((prev) => !prev)}
+                    className="CardFront flip-card"
+                  >
+                    <div>
+                      <h4>pellentesque habitant morbi</h4>
+                      <hr></hr>
+                    </div>
+                  </div>
+                  <div
+                    onMouseLeave={() => setIsFlipped1((prev) => !prev)}
+                    className="CardBack flip-card"
+                  >
+                    <p>
+                      Imperdiet massa tincidunt nunc pulvinar sapien et.
+                      Consectetur adipiscing elit pellentesque habitant morbi
+                      tristique senectus et netus.
+                    </p>
+                  </div>
+                </ReactCardFlip>
+              </Col>
+              <Col lg></Col>
+
+              <Col xs>
+                <ReactCardFlip
+                  isFlipped={isFlipped2}
+                  flipDirection="horizontal"
+                >
+                  <div
+                    onMouseEnter={() => setIsFlipped2((prev) => !prev)}
+                    className="CardFront flip-card"
+                  >
+                    <div>
+                      <h4>adipiscing elit pellentesque</h4>
+                      <hr></hr>
+                    </div>
+                  </div>
+                  <div
+                    onMouseLeave={() => setIsFlipped2((prev) => !prev)}
+                    className="CardBack flip-card"
+                  >
+                    <p>
+                      Imperdiet massa tincidunt nunc pulvinar sapien et.
+                      Consectetur adipiscing elit pellentesque habitant morbi
+                      tristique senectus et netus.
+                    </p>
+                  </div>
+                </ReactCardFlip>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <section
+          style={{
+            position: "relative",
+          }}
+          className="process-section"
+        >
+          <Container fluid style={{ width: "95vw" }}>
+            <div className="display-5 text-center text-uppercase ">
+              Our Process
+            </div>
+            <hr style={{ width: 80 }}></hr>
+            <Row>
+              <br></br>
+              <br></br>
+              <Col className="process-steps">
+                <MdContactPhone size={80} />
+                <br></br>
+                <br></br>
+                <h6>
+                  <strong>Step 1</strong>
+                </h6>
+                <br></br>
+                <p>
+                  Habitant morbi tristique et netus. <br></br>
+                  Amet mauris commodo quis imperdiet massa.
+                </p>
+              </Col>
+              <Col className="process-steps">
+                <BiPaperPlane size={80} />
+                <br></br>
+                <br></br>
+                <h6>
+                  <strong>Step 2</strong>
+                </h6>
+                <br></br>
+                <p>
+                  Habitant morbi tristique et netus. <br></br>
+                  Amet mauris commodo quis imperdiet massa.
+                </p>
+              </Col>
+              <Col className="process-steps">
+                <FaFileInvoice size={80} />
+                <br></br>
+                <br></br>
+                <h6>
+                  <strong>Step 3</strong>
+                </h6>
+                <br></br>
+                <p>
+                  Habitant morbi tristique et netus. <br></br>
+                  Amet mauris commodo quis imperdiet massa.
+                </p>
+              </Col>
+              <Col className="process-steps">
+                <FaTools size={80} />
+                <br></br>
+                <br></br>
+                <h6>
+                  <strong>Step 4</strong>
+                </h6>
+                <br></br>
+                <p>
+                  Habitant morbi tristique et netus. <br></br>
+                  Amet mauris commodo quis imperdiet massa.
+                </p>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+
+        <section
+          style={{
+            position: "relative",
+          }}
+          className="quality-section"
+        >
+          <Container fluid style={{ width: "95vw" }}>
+            <Row>
+              <br></br>
+              <br></br>
+              <Col className="quality-steps">
+                <BiFingerprint size={80} />
+                <br></br>
+                <br></br>
+                <br></br>
+                <p>
+                  Habitant morbi tristique et netus. <br></br>
+                  Amet mauris commodo quis imperdiet massa.
+                </p>
+              </Col>
+              <Col className="quality-steps">
+                <BiHeartCircle size={80} />
+                <br></br>
+                <br></br>
+                <br></br>
+                <p>
+                  Habitant morbi tristique et netus. <br></br>
+                  Amet mauris commodo quis imperdiet massa.
+                </p>
+              </Col>
+              <Col className="quality-steps">
+                <GiCheckMark size={80} />
+                <br></br>
+                <br></br>
+                <br></br>
+                <p>
+                  Habitant morbi tristique et netus. <br></br>
+                  Amet mauris commodo quis imperdiet massa.
+                </p>
+              </Col>
+              <Col className="quality-steps">
+                <GiLaurelsTrophy size={80} />
+                <br></br>
+                <br></br>
+                <br></br>
+                <p>
+                  Habitant morbi tristique et netus. <br></br>
+                  Amet mauris commodo quis imperdiet massa.
+                </p>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <section
+          className="partial-about-section"
+          style={{
+            position: "relative",
+          }}
+        >
+          <Container fluid style={{ width: "70vw" }}>
+            <Row>
+              <Col>
+                <Image
+                  alt="house with orange couch"
+                  objectFit="contain"
+                  layout="responsive"
+                  src={team}
+                />
+              </Col>
+              <Col>
+                <div style={{ width: "60%" }} className="display-6">
+                  Dis parturient montes nascetur ridiculus
+                </div>
+                <br></br>
+                <hr></hr>
+                <br></br>
+                <div style={{ width: "60%" }}>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Et magnis dis parturient montes nascetur ridiculus
+                    mus mauris vitae. Nec sagittis
+                  </p>
+                  <br></br>
+                  <p>
+                    Imperdiet massa tincidunt nunc pulvinar sapien et.
+                    Consectetur adipiscing elit pellentesque habitant morbi
+                    tristique senectus et netus. Amet mauris commodo quis
+                    imperdiet massa. Congue mauris rhoncus aenean vel elit
+                    scelerisque. Enim nulla aliquet porttitor lacus. Adipiscing
+                  </p>
+                </div>
+                <button className="button">
+                  <Link href={"/about"}>
+                    ABOUT US &nbsp; <BsArrowUpRight />
+                  </Link>
+                </button>
+              </Col>
+            </Row>
+          </Container>
+        </section>
       </div>
     </>
   );
