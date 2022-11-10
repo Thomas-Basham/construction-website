@@ -10,7 +10,6 @@ body {
   --custom-color-brand: #24b47e;
   --custom-color-brand-secondary: #3a2e69;
   --custom-color-secondary: #ebf4fa;
-  ;
   --custom-border: 1px solid #333;
   --custom-border-radius: 5px;
   --custom-spacing: 5px;
@@ -20,6 +19,7 @@ body {
   margin: 0 !important;
   font-family: var(--custom-font-family) !important;
   background-color: var(--custom-color) !important;
+  overflow: auto;
 }
 
 a {
@@ -33,6 +33,9 @@ a {
 
 main {
   min-height: 99vh;
+  height: fit-content !important;
+  margin: 0;
+  padding: 0;
 }
 
 hr {
@@ -76,7 +79,8 @@ button {
   background-color: var(--custom-color-brand);
   border: none;
   color: var(--custom-color);
-  padding: 1.5em;
+  padding-inline: 2em;
+  padding-block: .75em;
   border-radius: var(--custom-border-radius) !important;
 }
 
@@ -100,6 +104,7 @@ footer {
 section {
   margin: 0 auto;
   background-color: var(--custom-color);
+
 }
 
 .active,
@@ -156,7 +161,7 @@ section {
   background-color: var(--custom-color-secondary);
   margin-top: 2em;
   padding-top: 4em;
-  padding-bottom: 8em;
+  padding-bottom: 6em;
 }
 
 .process-steps {
@@ -168,5 +173,43 @@ section {
   color: var(--custom-color-secondary);
 }
 
+.quality-section {
+  background-color: var(--custom-color);
+  margin-top: 2em;
+  padding-top: 4em;
+  padding-bottom: 0em;
+}
+
+.quality-steps {
+  background-color: var(--custom-color);
+  height: 22em;
+  border: .5em solid var(--custom-color);
+  text-align: center;
+  padding-top: 2%;
+  color: var(--custom-color-panel);
+}
+
+.quality-steps svg {
+  color: var(--custom-color-brand)
+}
+
+.partial-about-section {
+  background-color: var(--custom-color-brand);
+  margin-top: 2em;
+  padding-top: 4em;
+  padding-bottom: 6em;
+  color: var(--custom-color-secondary);
+}
+
+.partial-about-section hr {
+  margin: 0 !important;
+  width: 40%;
+}
+
+.partial-about-section button,
+.partial-about-section button a {
+  background-color: var(--custom-color-secondary);
+  color: var(--custom-color-brand);
+}
 
 @media (max-width: 600px) {}

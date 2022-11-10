@@ -3,13 +3,16 @@ import Image from "next/image";
 import orangeCouch from "/public/stock/orange-couch.jpg";
 import stairsPeople from "/public/stock/stairs-people.jpg";
 import patio from "/public/stock/patio.jpg";
+import team from "/public/stock/team.jpg";
 import Link from "next/link";
-import { BsArrowUpRight } from "react-icons/bs";
-import { MdContactPhone } from "react-icons/md";
-import { BiPaperPlane } from "react-icons/bi";
-import { FaFileInvoice, FaTools } from "react-icons/fa";
 import ReactCardFlip from "react-card-flip";
 import { useState } from "react";
+
+import { GiLaurelsTrophy, GiCheckMark } from "react-icons/gi";
+import { BsArrowUpRight } from "react-icons/bs";
+import { MdContactPhone } from "react-icons/md";
+import { BiPaperPlane, BiHeartCircle, BiFingerprint } from "react-icons/bi";
+import { FaFileInvoice, FaTools } from "react-icons/fa";
 
 export default function Home() {
   const [isFlipped1, setIsFlipped1] = useState(false);
@@ -19,17 +22,19 @@ export default function Home() {
     <>
       <Image
         alt="house with orange couch"
-        objectFit="contain"
-        layout="responsive"
+        objectFit="cover"
+        layout='fill'
         src={orangeCouch}
-        style={{ position: "relative", top: -400 }}
       />
+    <div>
       <section
         style={{
+
+          marginTop: "40em",
           padding: "5em",
           width: "fit-content",
           position: "relative",
-          top: -650,
+      
         }}
       >
         <div className="detached-heading text-center display-6">
@@ -78,7 +83,7 @@ export default function Home() {
         className="bg-image-section"
         style={{
           position: "relative",
-          top: -650,
+          
         }}
       >
         <br></br>
@@ -150,7 +155,7 @@ export default function Home() {
       <section
         style={{
           position: "relative",
-          top: -650,
+          
         }}
         className="process-section"
       >
@@ -217,6 +222,111 @@ export default function Home() {
           </Row>
         </Container>
       </section>
+
+      <section
+        style={{
+          position: "relative",
+          
+        }}
+        className="quality-section"
+      >
+        <Container fluid style={{ width: "95vw" }}>
+          <Row>
+            <br></br>
+            <br></br>
+            <Col className="quality-steps">
+              <BiFingerprint size={80} />
+              <br></br>
+              <br></br>
+              <br></br>
+              <p>
+                Habitant morbi tristique et netus. <br></br>
+                Amet mauris commodo quis imperdiet massa.
+              </p>
+            </Col>
+            <Col className="quality-steps">
+              <BiHeartCircle size={80} />
+              <br></br>
+              <br></br>
+              <br></br>
+              <p>
+                Habitant morbi tristique et netus. <br></br>
+                Amet mauris commodo quis imperdiet massa.
+              </p>
+            </Col>
+            <Col className="quality-steps">
+              <GiCheckMark size={80} />
+              <br></br>
+              <br></br>
+              <br></br>
+              <p>
+                Habitant morbi tristique et netus. <br></br>
+                Amet mauris commodo quis imperdiet massa.
+              </p>
+            </Col>
+            <Col className="quality-steps">
+              <GiLaurelsTrophy size={80} />
+              <br></br>
+              <br></br>
+              <br></br>
+              <p>
+                Habitant morbi tristique et netus. <br></br>
+                Amet mauris commodo quis imperdiet massa.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section
+        className="partial-about-section"
+        style={{
+          position: "relative",
+          
+        }}
+      >
+        <Container fluid style={{ width: "70vw" }}>
+          <Row>
+            <Col>
+              <Image
+                alt="house with orange couch"
+                objectFit="contain"
+                layout="responsive"
+                src={team}
+              />
+            </Col>
+            <Col>
+              <div style={{ width: "60%" }} className="display-6">
+                Dis parturient montes nascetur ridiculus
+              </div>
+              <br></br>
+              <hr></hr>
+              <br></br>
+              <div style={{ width: "60%" }}>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Et magnis dis parturient montes nascetur ridiculus mus mauris
+                  vitae. Nec sagittis
+                </p>
+                <br></br>
+                <p>
+                  Imperdiet massa tincidunt nunc pulvinar sapien et. Consectetur
+                  adipiscing elit pellentesque habitant morbi tristique senectus
+                  et netus. Amet mauris commodo quis imperdiet massa. Congue
+                  mauris rhoncus aenean vel elit scelerisque. Enim nulla aliquet
+                  porttitor lacus. Adipiscing
+                </p>
+              </div>
+              <button className="button">
+                <Link href={"/about"}>
+                  ABOUT US &nbsp; <BsArrowUpRight />
+                </Link>
+              </button>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      </div>
     </>
   );
 }
