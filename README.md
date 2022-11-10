@@ -1,5 +1,6 @@
 # Construction Contractor Website Template
-[https://construction-website-rho.vercel.app](https://construction-website-rho.vercel.app/)
+
+[https://construction-website-template-bashamtg.vercel.app](https://construction-website-template-bashamtg.vercel.app)
 
 ## Author: Thomas Basham
 
@@ -16,6 +17,7 @@ A website template for a construction contractor company.
 - Nextjs
 - Bootstrap
 - React-Icons
+- Emailjs
 - Vercel
 
 ## Features
