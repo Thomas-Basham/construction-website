@@ -5,6 +5,9 @@ import stairsPeople from "/public/stock/stairs-people.jpg";
 import patio from "/public/stock/patio.jpg";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
+import { MdContactPhone } from "react-icons/md";
+import { BiPaperPlane } from "react-icons/bi";
+import { FaFileInvoice, FaTools } from "react-icons/fa";
 import ReactCardFlip from "react-card-flip";
 import { useState } from "react";
 
@@ -80,9 +83,15 @@ export default function Home() {
       >
         <br></br>
         <br></br>
-        <br></br>
-        <Container fluid className="text-center text-white text-uppercase">
-          <h1 className="display-3">Lorem ipsum dolor</h1>
+        <Container fluid className="text-center text-white ">
+          <h1 className="display-5 text-uppercase">
+            Lorem ipsum dolor imperdiet massa
+          </h1>
+          <p style={{ width: "50em", margin: "0 auto" }}>
+            Amet mauris commodo quis imperdiet massa. Congue mauris rhoncus
+            aenean vel elit scelerisque. Enim nulla aliquet porttitor lacus.
+            Adipiscing
+          </p>
           <br></br>
           <br></br>
 
@@ -95,6 +104,7 @@ export default function Home() {
                 >
                   <div>
                     <h4>pellentesque habitant morbi</h4>
+                    <hr></hr>
                   </div>
                 </div>
                 <div
@@ -116,10 +126,10 @@ export default function Home() {
                 <div
                   onMouseEnter={() => setIsFlipped2((prev) => !prev)}
                   className="CardFront flip-card"
-                  
                 >
                   <div>
                     <h4>adipiscing elit pellentesque</h4>
+                    <hr></hr>
                   </div>
                 </div>
                 <div
@@ -130,9 +140,79 @@ export default function Home() {
                     Imperdiet massa tincidunt nunc pulvinar sapien et.
                     Consectetur adipiscing elit pellentesque habitant morbi
                     tristique senectus et netus.
-                  </p>{" "}
+                  </p>
                 </div>
               </ReactCardFlip>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section
+        style={{
+          position: "relative",
+          top: -650,
+        }}
+        className="process-section"
+      >
+        <Container fluid style={{ width: "95vw" }}>
+          <div className="display-5 text-center text-uppercase ">
+            Our Process
+          </div>
+          <hr style={{ width: 80 }}></hr>
+          <Row>
+            <br></br>
+            <br></br>
+            <Col className="process-steps">
+              <MdContactPhone size={80} />
+              <br></br>
+              <br></br>
+              <h6>
+                <strong>Step 1</strong>
+              </h6>
+              <br></br>
+              <p>
+                Habitant morbi tristique et netus. <br></br>
+                Amet mauris commodo quis imperdiet massa.
+              </p>
+            </Col>
+            <Col className="process-steps">
+              <BiPaperPlane size={80} />
+              <br></br>
+              <br></br>
+              <h6>
+                <strong>Step 2</strong>
+              </h6>
+              <br></br>
+              <p>
+                Habitant morbi tristique et netus. <br></br>
+                Amet mauris commodo quis imperdiet massa.
+              </p>
+            </Col>
+            <Col className="process-steps">
+              <FaFileInvoice size={80} />
+              <br></br>
+              <br></br>
+              <h6>
+                <strong>Step 3</strong>
+              </h6>
+              <br></br>
+              <p>
+                Habitant morbi tristique et netus. <br></br>
+                Amet mauris commodo quis imperdiet massa.
+              </p>
+            </Col>
+            <Col className="process-steps">
+              <FaTools size={80} />
+              <br></br>
+              <br></br>
+              <h6>
+                <strong>Step 4</strong>
+              </h6>
+              <br></br>
+              <p>
+                Habitant morbi tristique et netus. <br></br>
+                Amet mauris commodo quis imperdiet massa.
+              </p>
             </Col>
           </Row>
         </Container>

@@ -9,7 +9,7 @@ body {
   --custom-color: #fff;
   --custom-color-brand: #24b47e;
   --custom-color-brand-secondary: #3a2e69;
-  --custom-color-secondary: #EDF1F5;
+  --custom-color-secondary: #ebf4fa;
   ;
   --custom-border: 1px solid #333;
   --custom-border-radius: 5px;
@@ -19,7 +19,7 @@ body {
   padding: 0 !important;
   margin: 0 !important;
   font-family: var(--custom-font-family) !important;
-  background-color: white !important;
+  background-color: var(--custom-color) !important;
 }
 
 a {
@@ -37,9 +37,9 @@ main {
 
 hr {
   border: none;
-  border-top: 3px double #333 !important;
+  border-top: 3px double !important;
   width: 80%;
-  margin: 2em auto 2em !important;
+  margin: 1em auto 1em !important;
 }
 
 /* hr:after {
@@ -126,6 +126,8 @@ section {
   background-size: cover;
   height: 46em;
   width: 77vw;
+  margin-top: 2em;
+
 }
 
 .detached-heading {
@@ -140,15 +142,31 @@ section {
 }
 
 .flip-card {
-  padding: 20px;
-  padding-block: 5em;
+  padding-inline: 6em;
+  padding-block: 4.5em;
   margin-inline: 30px;
   justify-self: center;
   width: fit-content;
-  height: fit-content;
+  height: 15em;
   background-color: var(--custom-color-brand);
+  opacity: 80%;
 }
 
-;
+.process-section {
+  background-color: var(--custom-color-secondary);
+  margin-top: 2em;
+  padding-top: 4em;
+  padding-bottom: 8em;
+}
+
+.process-steps {
+  background-color: var(--custom-color-brand);
+  height: 22em;
+  border: .5em solid var(--custom-color-secondary);
+  text-align: center;
+  padding-top: 2%;
+  color: var(--custom-color-secondary);
+}
+
 
 @media (max-width: 600px) {}
