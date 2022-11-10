@@ -212,4 +212,14 @@ section {
   color: var(--custom-color-brand);
 }
 
+.contact-form-section {
+  margin-top: 2em;
+
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+  margin-bottom: 2em;
+}
+
 @media (max-width: 600px) {}

@@ -1,11 +1,9 @@
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Form, TextArea, Button } from "react-bootstrap";
 import Image from "next/image";
 import orangeCouch from "/public/stock/orange-couch.jpg";
-import stairsPeople from "/public/stock/stairs-people.jpg";
 import patio from "/public/stock/patio.jpg";
 import team from "/public/stock/team.jpg";
 import Link from "next/link";
-import ReactCardFlip from "react-card-flip";
 import { useState } from "react";
 
 import { GiLaurelsTrophy, GiCheckMark } from "react-icons/gi";
@@ -14,10 +12,39 @@ import { MdContactPhone } from "react-icons/md";
 import { BiPaperPlane, BiHeartCircle, BiFingerprint } from "react-icons/bi";
 import { FaFileInvoice, FaTools } from "react-icons/fa";
 
+import ReactCardFlip from "react-card-flip";
+import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
+
 export default function Home() {
   const [isFlipped1, setIsFlipped1] = useState(false);
   const [isFlipped2, setIsFlipped2] = useState(false);
 
+  const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
+      (result) => {
+        console.log(result.text);
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent Successfully",
+        });
+      },
+      (error) => {
+        console.log(error.text);
+        Swal.fire({
+          icon: "error",
+          title: "Ooops, something went wrong",
+          text: error.text,
+        });
+      }
+    );
+    e.target.reset();
+  };
   return (
     <>
       <Image
@@ -288,7 +315,7 @@ export default function Home() {
             <Row>
               <Col>
                 <Image
-                  alt="house with orange couch"
+                  alt="Teamwork"
                   objectFit="contain"
                   layout="responsive"
                   src={team}
@@ -324,6 +351,46 @@ export default function Home() {
                 </button>
               </Col>
             </Row>
+          </Container>
+        </section>
+
+        <section className="contact-form-section">
+          <Container fluid style={{ width: "40vw" }}>
+            <div className="display-5 text-center text-uppercase ">
+              Contact Us
+            </div>
+            <br></br>
+            <p className="text-center">
+              Congue mauris rhoncus aenean vel elit scelerisque? Enim nulla
+              aliquet.
+            </p>
+            <Form onSubmit={handleOnSubmit}>
+              <Form.Control
+                id="form-input-control-email "
+                label="Email"
+                name="from_email"
+                placeholder="Email…"
+                required
+                icon="mail"
+                iconPosition="left"
+              />
+              <Form.Control
+                id="form-input-control-last-name"
+                label="Name"
+                name="from_name"
+                placeholder="Name…"
+                required
+              />
+              <Form.Control
+                id="form-textarea-control-opinion"
+                as="textarea"
+                rows={6}
+                name="message"
+                placeholder="Message…"
+                required
+              />
+              <button type="submit">Submit</button>
+            </Form>
           </Container>
         </section>
       </div>
