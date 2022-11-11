@@ -1,6 +1,7 @@
-import { Row, Col, Container, Form, TextArea, Button } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import ReactCardFlip from "react-card-flip";
 import { useState } from "react";
+import { Zoom } from "react-reveal";
 
 export default function BgImageSection() {
   const [isFlipped1, setIsFlipped1] = useState(false);
@@ -25,57 +26,58 @@ export default function BgImageSection() {
         </p>
         <br></br>
         <br></br>
-
-        <Row className="px-4">
-          <Col sm={4}>
-            <ReactCardFlip isFlipped={isFlipped1} flipDirection="horizontal">
-              <div
-                onMouseEnter={() => setIsFlipped1((prev) => !prev)}
-                className="CardFront flip-card"
-              >
-                <div>
-                  <h4>pellentesque habitant morbi</h4>
-                  <hr></hr>
+        <Zoom>
+          <Row className="px-4">
+            <Col sm={4}>
+              <ReactCardFlip isFlipped={isFlipped1} flipDirection="horizontal">
+                <div
+                  onMouseEnter={() => setIsFlipped1((prev) => !prev)}
+                  className="CardFront flip-card"
+                >
+                  <div>
+                    <h4>pellentesque habitant morbi</h4>
+                    <hr></hr>
+                  </div>
                 </div>
-              </div>
-              <div
-                onMouseLeave={() => setIsFlipped1((prev) => !prev)}
-                className="CardBack flip-card"
-              >
-                <p>
-                  Imperdiet massa tincidunt nunc pulvinar sapien et. Consectetur
-                  adipiscing elit pellentesque habitant morbi tristique senectus
-                  et netus.
-                </p>
-              </div>
-            </ReactCardFlip>
-          </Col>
-          <Col sm={4}></Col>
-
-          <Col sm={4}>
-            <ReactCardFlip isFlipped={isFlipped2} flipDirection="horizontal">
-              <div
-                onMouseEnter={() => setIsFlipped2((prev) => !prev)}
-                className="CardFront flip-card"
-              >
-                <div>
-                  <h4>adipiscing elit pellentesque</h4>
-                  <hr></hr>
+                <div
+                  onMouseLeave={() => setIsFlipped1((prev) => !prev)}
+                  className="CardBack flip-card"
+                >
+                  <p>
+                    Imperdiet massa tincidunt nunc pulvinar sapien et.
+                    Consectetur adipiscing elit pellentesque habitant morbi
+                    tristique senectus et netus.
+                  </p>
                 </div>
-              </div>
-              <div
-                onMouseLeave={() => setIsFlipped2((prev) => !prev)}
-                className="CardBack flip-card"
-              >
-                <p>
-                  Imperdiet massa tincidunt nunc pulvinar sapien et. Consectetur
-                  adipiscing elit pellentesque habitant morbi tristique senectus
-                  et netus.
-                </p>
-              </div>
-            </ReactCardFlip>
-          </Col>
-        </Row>
+              </ReactCardFlip>
+            </Col>
+            <Col sm={4}></Col>
+
+            <Col sm={4}>
+              <ReactCardFlip isFlipped={isFlipped2} flipDirection="horizontal">
+                <div
+                  onMouseEnter={() => setIsFlipped2((prev) => !prev)}
+                  className="CardFront flip-card"
+                >
+                  <div>
+                    <h4>adipiscing elit pellentesque</h4>
+                    <hr></hr>
+                  </div>
+                </div>
+                <div
+                  onMouseLeave={() => setIsFlipped2((prev) => !prev)}
+                  className="CardBack flip-card"
+                >
+                  <p>
+                    Imperdiet massa tincidunt nunc pulvinar sapien et.
+                    Consectetur adipiscing elit pellentesque habitant morbi
+                    tristique senectus et netus.
+                  </p>
+                </div>
+              </ReactCardFlip>
+            </Col>
+          </Row>
+        </Zoom>
       </Container>
     </section>
   );

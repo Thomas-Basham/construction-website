@@ -20,6 +20,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
     "react-image-gallery": "^1.2.11",
+    "react-reveal": "^1.2.2",
     "sweetalert2": "^11.6.8"
   }
 }

@@ -144,7 +144,7 @@ section {
   width: fit-content;
   background-color: var(--custom-color-secondary);
   text-transform: uppercase;
-  color: var(--custom-panel-color)
+  color: var(--custom-panel-color);
 }
 
 .flip-card {
