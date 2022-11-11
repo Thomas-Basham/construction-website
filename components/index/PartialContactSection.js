@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import ContactForm from "../ContactForm";
 export default function PartialContactSection() {
   return (
-    <section className="contact-form-section" style={{ width: "40vw" }}>
+    <section className="contact-form-section">
       <Container fluid>
         <div className="display-5 text-center text-uppercase ">Contact Us</div>
         <br></br>

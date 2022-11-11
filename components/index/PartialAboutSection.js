@@ -12,9 +12,9 @@ export default function PartialAboutSection() {
         position: "relative",
       }}
     >
-      <Container fluid style={{ width: "70vw" }}>
-        <Row>
-          <Col>
+      <Container fluid className="partial-about-container" style={{margin:'0 auto'}}>
+        <Row >
+          <Col sm={7}>
             <Image
               alt="Teamwork"
               objectFit="contain"
@@ -22,14 +22,14 @@ export default function PartialAboutSection() {
               src={team}
             />
           </Col>
-          <Col>
-            <div style={{ width: "60%" }} className="display-6">
+          <Col sm={4}>
+            <div  className="display-6">
               Dis parturient montes nascetur ridiculus
             </div>
             <br></br>
             <hr></hr>
             <br></br>
-            <div style={{ width: "60%" }}>
+            <div >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Et

@@ -62,7 +62,7 @@ header nav {
 
   position: fixed;
   top: 0;
-
+  opacity: 90%;
 }
 
 a {
@@ -129,7 +129,8 @@ section {
   background-image: url("../public/stock/stairs-people.jpg") !important;
   background-position-y: 60%;
   background-size: cover;
-  height: 46em;
+  height: fit-content;
+  padding-bottom: 20em;
   width: 77vw;
   margin-top: 2em;
 
@@ -152,7 +153,7 @@ section {
   margin-inline: 30px;
   justify-self: center;
   width: fit-content;
-  height: 15em;
+  height: 18em;
   background-color: var(--custom-color-brand);
   opacity: 80%;
 }
@@ -201,6 +202,10 @@ section {
   color: var(--custom-color-secondary);
 }
 
+.partial-about-container {
+  width: 70vw !important
+}
+
 .partial-about-section hr {
   margin: 0 !important;
   width: 40%;
@@ -214,12 +219,72 @@ section {
 
 .contact-form-section {
   margin-top: 2em;
-
+  width: 40vw
 }
 
-.contact-form-section input,
-.contact-form-section textarea {
+.contact-form input,
+.contact-form textarea {
   margin-bottom: 2em;
 }
 
-@media (max-width: 600px) {}
+.dropdown-menu {
+  width: 30vw !important;
+  height: 50vh !important;
+  padding: 1em !important;
+}
+
+.dropdown-toggle {
+  width: 30vw !important;
+}
+
+@media (max-width: 600px) {
+  .contact-form-section {
+    width: 99vw
+  }
+
+  .partial-about-container {
+    width: 100vw !important
+  }
+
+  .flip-card {
+    padding-inline: 3em;
+    padding-block: 2.5em;
+    margin-inline: 0px;
+    margin-bottom: 1em;
+  }
+
+  .intro-section {
+    margin-top: 25em !important;
+
+    width: 100vw !important;
+    padding: 0 !important;
+  }
+
+  .detached-heading {
+    position: relative !important;
+    top: 0px !important;
+    padding: .5em;
+    margin: 0 auto;
+    width: fit-content;
+    background-color: var(--custom-color-secondary);
+    text-transform: uppercase;
+    color: var(--custom-panel-color)
+  }
+
+  .bg-image-section {
+    padding-bottom: 0;
+    width: 99vw;
+    background-position-x: 50%;
+
+  }
+
+  .dropdown-menu {
+    width: 80vw !important;
+    height: 70vh !important;
+    padding: 1em !important;
+  }
+
+  .dropdown-toggle {
+    width: 40vw !important;
+  }
+}

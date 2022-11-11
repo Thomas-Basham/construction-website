@@ -31,7 +31,7 @@ export default function ContactForm() {
   };
 
   return (
-    <Form onSubmit={handleOnSubmit}>
+    <Form onSubmit={handleOnSubmit} className="contact-form">
       <Form.Control
         id="form-input-control-email "
         label="Email"
