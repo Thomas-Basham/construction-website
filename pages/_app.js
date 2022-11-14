@@ -1,9 +1,10 @@
 import "../styles/globals.css";
 import Layout from "../components/layout";
-
+import { SSRProvider } from 'react-bootstrap';
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 function MyApp({ Component, pageProps }) {
   return (
+    <SSRProvider>
     <Layout>
       <Component {...pageProps} />
 
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }) {
         crossOrigin="anonymous"
       />
     </Layout>
+    </SSRProvider>
   );
 }
 

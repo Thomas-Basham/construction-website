@@ -1,18 +1,11 @@
 import { Row, Col, Container } from "react-bootstrap";
-export default function About(props) {
+import BgImageSection from "../components/about/BgImageSection";
+import AboutText from "../components/about/aboutText";
+export default function AboutPage() {
   return (
     <>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <Container fluid="md">
-        <Row>
-          <Col className="text-center">
-            <h1>About us</h1>
-          </Col>
-        </Row>
-      </Container>
+    <BgImageSection/>
+    <AboutText/>
     </>
   );
 }
