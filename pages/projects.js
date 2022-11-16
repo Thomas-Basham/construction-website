@@ -6,14 +6,14 @@ export default function Projects(props) {
   const images = [orangeCouch, patio];
 
   const imageGalleryData = images.map((image) => {
-    return { original: image.src, thumbnail: image.src };
+    return { original: image.src, thumbnail: image.src, originalHeight: 650 };
   });
   return (
     <>
-      <ImageGallery autoPlay={true} showFullscreenButton={false} items={imageGalleryData} />
-      {/* <hr></hr> */}
+    <Container fluid  >
+      <ImageGallery autoPlay={true} items={imageGalleryData} />
 
-
+      </Container>
     </>
   );
 }
