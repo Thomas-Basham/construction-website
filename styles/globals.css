@@ -265,6 +265,11 @@ section {
   padding: 1em;
 }
 
+.image-gallery-svg:hover,
+.image-gallery-icon:hover {
+  color: var(--custom-color-brand);
+}
+
 @media (max-width: 600px) {
   .contact-form-section {
     width: 99vw
