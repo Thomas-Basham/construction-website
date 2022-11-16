@@ -36,7 +36,7 @@ main {
   height: fit-content !important;
   margin: 0;
   padding: 0;
-  
+
 }
 
 hr {
@@ -148,7 +148,7 @@ section {
 
 }
 
-.about-heading{
+.about-heading {
   position: relative !important;
   top: 6em !important;
   background-color: var(--custom-color-secondary);
@@ -157,7 +157,7 @@ section {
   padding: 10px;
   padding-right: 20%;
   opacity: 80%;
-  
+
 }
 
 .detached-heading {
@@ -261,6 +261,10 @@ section {
   width: 30vw !important;
 }
 
+.project-image {
+  padding: 1em;
+}
+
 @media (max-width: 600px) {
   .contact-form-section {
     width: 99vw
@@ -310,5 +314,11 @@ section {
 
   .dropdown-toggle {
     width: 40vw !important;
+  }
+
+  .project-image {
+    width: 100% !important;
+    padding: 0;
+    padding-block: .5em !important;
   }
 }
