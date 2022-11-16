@@ -1,7 +1,6 @@
-import { Row, Col, Container, Form, TextArea, Button } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import Image from "next/image";
-import Link from "next/link";
-import { BsArrowUpRight } from "react-icons/bs";
+
 import team from "/public/stock/team.jpg";
 
 export default function AboutSection() {

@@ -1,14 +1,10 @@
-import { Row, Col, Container, Form, TextArea, Button } from "react-bootstrap";
-import Image from "next/image";
-import Link from "next/link";
-import { BsArrowUpRight } from "react-icons/bs";
-import team from "/public/stock/team.jpg";
+import { Container } from "react-bootstrap";
 
 export default function ParagraphSection() {
   return (
     <section className="about-section pt-5 mx-auto" style={{ width: "50vw" }}>
       <Container fluid className="about-container mx-auto">
-       <div className="display-6 text-center">About our company</div>
+        <div className="display-6 text-center">About our company</div>
         <hr></hr>
         <br></br>
         <br></br>
