@@ -1,6 +1,6 @@
 import { Row, Col, Container } from "react-bootstrap";
 import BgImageSection from "../components/about/BgImageSection";
-import AboutText from "../components/about/AboutText";
+import AboutText from "../components/about/AboutHeading";
 import AboutSection from '../components/about/AboutSection'
 import ParagraphSection from "../components/about/ParagraphSection";
 export default function AboutPage() {
