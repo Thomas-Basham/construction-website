@@ -8,6 +8,7 @@ export default function AboutText() {
           Et tempore assumenda nam deserunt rerum eos.
         </div>
       </Container>
+    
     </section>
   );
 }
