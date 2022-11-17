@@ -13,13 +13,13 @@ A website template for a construction contractor company.
 
 ## Tech Used
 
-- Reactjs
-- Nextjs
+- ReactJS
+- NextJS
 - Bootstrap
-- React-Icons
-- Emailjs
+- EmailJS
 - Vercel
-
-## Features
-
-## References
+- React-Icons
+- React Card Flip
+- React Image Gallery
+- React Reveal
+- Sweet Alert
