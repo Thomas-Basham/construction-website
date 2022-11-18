@@ -142,9 +142,19 @@ section {
   background-position: top center;
   background-position-y: 50%;
   background-size: cover;
-  height: 35em;
+  height: 55em;
   padding-bottom: 20em;
   /* width: 77vw; */
+
+}
+
+.full-screen-image-section {
+  background-image: url("../public/stock/orange-couch.jpg") !important;
+  background-position-y: 50% !important;
+  background-position: top center;
+  background-size: cover;
+  width: 100vw;
+  height: 77vh !important;
 
 }
 
@@ -270,6 +280,16 @@ section {
   color: var(--custom-color-brand);
 }
 
+
+.cover-text {
+  background-color: rgba(194, 213, 216, 0.5) !important;
+  padding: .4em;
+  /* opacity: 59%; */
+}
+
+
+
+
 @media (max-width: 600px) {
   .contact-form-section {
     width: 99vw
@@ -287,11 +307,12 @@ section {
   }
 
   .intro-section {
-    margin-top: 25em !important;
+    /* margin-top: 25em !important; */
 
     width: 100vw !important;
     padding: 0 !important;
   }
+
 
   .detached-heading {
     position: relative !important;
@@ -310,6 +331,8 @@ section {
     background-position-x: 50%;
 
   }
+
+
 
   .dropdown-menu {
     width: 80vw !important;

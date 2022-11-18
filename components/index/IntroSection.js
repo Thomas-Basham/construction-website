@@ -10,10 +10,11 @@ export default function IntroSection() {
     <section
       className="intro-section"
       style={{
-        marginTop: "40em",
+        // marginTop: "40em",
         padding: "5em",
         width: "80vw",
         position: "relative",
+        top: "-100px"
       }}
     >
       <Fade left cascade>
@@ -41,7 +42,7 @@ export default function IntroSection() {
                 adipiscing elit pellentesque habitant morbi tristique senectus
                 et netus. Amet mauris commodo quis imperdiet massa. Congue
                 mauris rhoncus aenean vel elit scelerisque. Enim nulla aliquet
-                porttitor lacus. Adipiscing
+                porttitor lacus. Adipiscing.
               </p>
               <button className="button">
                 <Link href={"/projects"}>
