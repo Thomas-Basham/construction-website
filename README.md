@@ -15,11 +15,19 @@ A website template for a construction contractor company.
 
 - ReactJS
 - NextJS
+- Vercel
 - Bootstrap
 - EmailJS
-- Vercel
 - React-Icons
 - React Card Flip
 - React Image Gallery
 - React Reveal
 - Sweet Alert
+
+![screenshot](public/screenshots/screenshot_7.png)
+![screenshot](public/screenshots/screenshot_6.png)
+![screenshot](public/screenshots/screenshot_5.png)
+![screenshot](public/screenshots/screenshot_4.png)
+![screenshot](public/screenshots/screenshot_3.png)
+![screenshot](public/screenshots/screenshot_2.png)
+![screenshot](public/screenshots/screenshot_1.png)
